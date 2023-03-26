@@ -48,3 +48,35 @@ def change_number():
 
 change_number()
 print(number)
+
+
+def fahrenheit_celcius(temperature, mode):
+  assert mode == "f2c" or mode == "c2f", "Invalid argument!"
+  if mode == "f2c":
+    result = (temperature - 32) * 5 / 9
+    return result
+  else:
+    result = (temperature * 9 / 5) + 32
+    return result
+
+
+def pound_kilogram(quantity, mode):
+    assert mode == "pound2kg" or mode == "kg2pound", "Invalid argument!"
+
+    if mode == "pound2kg":
+        weight = quantity * 0.45359
+        return weight
+
+    else:
+        weight = quantity / 0.45359
+        return weight
+
+
+def mile2km(miles):
+  distance = miles * 1.60934
+  return distance
+
+def km2mile(km):
+  distance = km / 1.60934
+  return distance
+
